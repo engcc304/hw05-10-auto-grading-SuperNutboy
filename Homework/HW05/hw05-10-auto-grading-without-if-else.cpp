@@ -27,3 +27,46 @@
     Output:
         F !
 */
+#include <stdio.h>
+
+int main() {
+    int score; // ประกาศตัวแปรเก็บคะแนนดิบ
+
+    printf("enter score :\n"); // แสดงข้อความรับคะแนนดิบ
+    scanf("%d", &score); // รับค่าคะแนนดิบจากผู้ใช้
+
+    switch (score) { // เริ่มต้นใช้ switch case โดยใช้ค่า score เป็นตัวเลือก
+        case 80 ... 100: // ระหว่าง 80 ถึง 100
+            printf("A !\n");
+            break; // หยุดการทำงานใน switch case
+
+        case 75 ... 79: // ระหว่าง 75 ถึง 79
+            printf("B+ !\n");
+            break;
+
+        case 70 ... 74: // ระหว่าง 70 ถึง 74
+            printf("B !\n");
+            break;
+
+        case 65 ... 69: // ระหว่าง 65 ถึง 69
+            printf("C+ !\n");
+            break;
+
+        case 60 ... 64: // ระหว่าง 60 ถึง 64
+            printf("C !\n");
+            break;
+
+        case 55 ... 59: // ระหว่าง 55 ถึง 59
+            printf("D+ !\n");
+            break;
+
+        case 50 ... 54: // ระหว่าง 50 ถึง 54
+            printf("D !\n");
+            break;
+
+        default: // ถ้าไม่ได้ตรงกับเคสใดเลย
+            printf("F !\n");
+    }
+
+    return 0;
+}
