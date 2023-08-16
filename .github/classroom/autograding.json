@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Set 1",
+      "setup": "g++ -o a.out ./Homework/HW05/hw05-10-auto-grading-without-if-else.cpp",
+      "run": "./a.out",
+      "input": "80",
+      "output": "A !",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Set 2",
+      "setup": "g++ -o a.out ./Homework/HW05/hw05-10-auto-grading-without-if-else.cpp",
+      "run": "./a.out",
+      "input": "55",
+      "output": "D+ !",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Set 3",
+      "setup": "g++ -o a.out ./Homework/HW05/hw05-10-auto-grading-without-if-else.cpp",
+      "run": "./a.out",
+      "input": "64",
+      "output": "C !",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Set 4",
+      "setup": "g++ -o a.out ./Homework/HW05/hw05-10-auto-grading-without-if-else.cpp",
+      "run": "./a.out",
+      "input": "44",
+      "output": "F !",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
